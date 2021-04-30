@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .nav-container {
+      display: flex;
+      /* 排列方式 */
+      flex-direction: row;
+    }
+
+    .nav-logo {
+      color: blue;
+    }
+
+    .abc {
+      /* 難度較高 */
+      /* margin-right: auto; */
+      border: 1px solid black;
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .carrot-container {
+      display: flex;
+      /* padding: 6px; */
+      border: 1px solid red;
+    }
+
+    .content {
+      margin: 6px;
+      /* 變成鼠標 */
+      cursor: pointer;
+      /* padding: 6px; */
+      /* border: 1px solid black; */
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 導覽列 -->
+  <nav class='nav-container'>
+    <div class='nav-logo'>123</div>
+    <div class='nav-logo'>456</div>
+    <div class='nav-logo abc'>789</div>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+  </nav>
+
+  <!-- 內文 -->
+  <div class="carrot-container">
+
+    <!-- 卡片1 -->
+    <div class="content">
+      <!-- 圖片 -->
+      <div class="img-wrapper"></div>
+      <!-- 內文 -->
+      <div class="description" id="para">
+        我是內文
+      </div>
+    </div>
+
+    <!-- 卡片2 -->
+    <div class="content">
+      <!-- 圖片 -->
+      <div class="img-wrapper"></div>
+      <!-- 內文 -->
+      <div class="description">
+        我是內文
+      </div>
+    </div>
+
+    <!-- 卡片3 -->
+    <div class="content">
+      <!-- 圖片 -->
+      <div class="img-wrapper"></div>
+      <!-- 內文 -->
+      <div class="description">
+        我是內文
+      </div>
+    </div>
+
+    <!-- 卡片4 -->
+    <div class="content">
+      <!-- 圖片 -->
+      <div class="img-wrapper"></div>
+      <!-- 內文 -->
+      <div class="description">
+        我是內文
+      </div>
+    </div>
+
+    <!-- 卡片5 -->
+    <div class="content">
+      <!-- 圖片 -->
+      <div class="img-wrapper"></div>
+      <!-- 內文 -->
+      <div class="description">
+        我是內文
+      </div>
+    </div>
+
+    <!-- 卡片6 -->
+    <div class="content">
+      <!-- 圖片 -->
+      <div class="img-wrapper"></div>
+      <!-- 內文 -->
+      <div class="description">
+        我是內文
+      </div>
+    </div>
+  </div>
+
+  <!-- 頁尾 -->
+  <footer>
+
+  </footer>
+</body>
+
+<!-- Javascript -->
+<script>
+  /* 宣告變數 */
+  const descFirst = document.getElementById('para');
+  /* 印出東西 */
+  console.log('What is descFirst', descFirst);
+  /* 點擊事件 */
+  descFirst.addEventListener('click', () => {
+    /* 點之後的內容 */
+    alert('I was clicked');
+  })
+</script>
+
+</html>
