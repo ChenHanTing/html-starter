@@ -5,6 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </head>
 <body>
   <!-- 薰文的 -->
@@ -12,6 +19,41 @@
     <!-- 輪播 -->
     <div class="swiper">
       <!-- 還沒做 -->
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="image">
+              <!-- src: 圖片路徑; alt: 替代文字 -->
+              <img src="./images/shun/l1.jpg" alt="薰文">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image">
+              <!-- src: 圖片路徑; alt: 替代文字 -->
+              <img src="./images/shun/l2.jpg" alt="薰文">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image">
+              <!-- src: 圖片路徑; alt: 替代文字 -->
+              <img src="./images/shun/l3.jpg" alt="薰文">
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
     </div>
     <!-- 卡片 -->
     <div class="cards">
@@ -216,4 +258,47 @@
   br {
     margin: 40px 0;
   }
+
+  /* 輪播區塊: 電腦版使用輪播 */
+  .swiper-container {
+    width: 800px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+  }
+
+  .swiper-slide img {
+    width: 70%;
+    max-height: 100%;
+    object-fit: contain;
+  }
 </style>
+
+<script type="module">
+  import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+
+  const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+</script>
