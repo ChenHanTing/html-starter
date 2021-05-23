@@ -1,74 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- 輪播: 關鍵字打 swiper cdn -->
+    <!-- 參考: https://swiperjs.com/get-started -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 輪播: 關鍵字打 swiper cdn -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-</head>
-<body>
-  <!-- 薰文的 -->
-  <section class="landing-page">
-    <!-- 輪播 -->
-    <div class="swiper">
-      <!-- 還沒做 -->
-      <!-- Slider main container -->
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="image">
-              <!-- src: 圖片路徑; alt: 替代文字 -->
-              <img src="./images/shun/l1.jpg" alt="薰文">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="image">
-              <!-- src: 圖片路徑; alt: 替代文字 -->
-              <img src="./images/shun/l2.jpg" alt="薰文">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="image">
-              <!-- src: 圖片路徑; alt: 替代文字 -->
-              <img src="./images/shun/l3.jpg" alt="薰文">
-            </div>
-          </div>
+    <!-- Font Awesome: 關鍵字打 fontawesome cdn -->
+    <!-- https://fontawesome.com/how-to-use/customizing-wordpress/snippets/setup-cdn-webfont -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--======== class都是取名，不是關鍵字 ========-->
+    <!--薰文的導覽列-->
+    <nav class="aileea-navbar">
+      <div class="logo">薰文logo</div>
+      <div class="nav-items">
+        <!---------------------------
+          <ul>
+            <li>關於認識我</li>
+            <li>我的生活</li>
+            <li>校園生活</li>
+            <li>夢想和熱情</li>
+          </ul>
+        --------------------------->
+        <div>
+          <a href="/pages/about.html">關於我</a>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
+        <div>
+          <a href="/pages/me.html">我的生活</a>
+        </div>
+        <div>
+          <a href="/pages/campus.html">校園生活</a>
+        </div>
+        <div>
+          <a href="/pages/dream.html">夢想和熱情</a>
+        </div>
+        <div>
+          <a href="/pages/swiper.html">輪播</a>
+        </div>
+        <div class="icons">
+          <a href="https://www.facebook.com">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="https://www.facebook.com">
+            <i class="fab fa-line"></i>
+          </a>
+        </div>
       </div>
+    </nav>
+    <!-- 薰文的區塊 -->
+    <section class="landing-page">
+      <!-- 輪播 -->
+      <div class="swiper">
+        <!-- 還沒做 -->
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="image">
+                <!-- src: 圖片路徑; alt: 替代文字 -->
+                <img src="./images/shun/l1.jpg" alt="薰文" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <!-- src: 圖片路徑; alt: 替代文字 -->
+                <img src="./images/shun/l2.jpg" alt="薰文" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <!-- src: 圖片路徑; alt: 替代文字 -->
+                <img src="./images/shun/l3.jpg" alt="薰文" />
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-    </div>
-    <!-- 卡片 -->
-    <div class="cards">
-      <!-- 第一張 -->
-      <div class="card">
-        <!-- 圖片 -->
-        <div class="image">
-          <!-- src: 圖片路徑; alt: 替代文字 -->
-          <img src="./images/shun/l1.jpg" alt="薰文">
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
-        <!-- 文字 -->
-        <div class="desc">
-          <!-- 文字相關的標籤: h1~h6, p, span -->
-          <span>範例文字1</span>
-          <!--
+      </div>
+      <!-- 卡片 -->
+      <div class="cards">
+        <!-- 第一張 -->
+        <div class="card">
+          <!-- 圖片 -->
+          <div class="image">
+            <!-- src: 圖片路徑; alt: 替代文字 -->
+            <img src="./images/shun/l1.jpg" alt="薰文" />
+          </div>
+          <!-- 文字 -->
+          <div class="desc">
+            <!-- 文字相關的標籤: h1~h6, p, span -->
+            <span>範例文字1</span>
+            <!--
             <span>範例文字11</span>
             <span>範例文字111</span>
             <span>範例文字1111</span>
@@ -78,64 +129,63 @@
             <h4>H4</h1>
             <h5>H5</h1>
             <h6>H6</h1>
-          -->
+          --></div>
+        </div>
+        <!-- 第二張 -->
+        <div class="card">
+          <!-- 圖片 -->
+          <div class="image">
+            <img src="./images/shun/l2.jpg" alt="_alter" />
+          </div>
+          <!-- 文字 -->
+          <div class="desc">
+            <!-- 文字相關的標籤: h1~h6, p, span -->
+            <span>範例文字2</span>
+          </div>
+        </div>
+        <!-- 第三張 -->
+        <div class="card">
+          <!-- 圖片 -->
+          <div class="image">
+            <img src="./images/shun/l3.jpg" alt="_alter" />
+          </div>
+          <!-- 文字 -->
+          <div class="desc">
+            <!-- 文字相關的標籤: h1~h6, p, span -->
+            <span>範例文字3</span>
+          </div>
+        </div>
+        <!-- 第四張 -->
+        <div class="card">
+          <!-- 圖片 -->
+          <div class="image">
+            <img src="./images/shun/l4.jpg" alt="_alter" />
+          </div>
+          <!-- 文字 -->
+          <div class="desc">
+            <!-- 文字相關的標籤: h1~h6, p, span -->
+            <span>範例文字4</span>
+          </div>
         </div>
       </div>
-      <!-- 第二張 -->
-      <div class="card">
-        <!-- 圖片 -->
-        <div class="image">
-          <img src="./images/shun/l2.jpg" alt="_alter">
-        </div>
-        <!-- 文字 -->
-        <div class="desc">
-          <!-- 文字相關的標籤: h1~h6, p, span -->
-          <span>範例文字2</span>
-        </div>
-      </div>
-      <!-- 第三張 -->
-      <div class="card">
-        <!-- 圖片 -->
-        <div class="image">
-          <img src="./images/shun/l3.jpg" alt="_alter">
-        </div>
-        <!-- 文字 -->
-        <div class="desc">
-          <!-- 文字相關的標籤: h1~h6, p, span -->
-          <span>範例文字3</span>
-        </div>
-      </div>
-      <!-- 第四張 -->
-      <div class="card">
-        <!-- 圖片 -->
-        <div class="image">
-          <img src="./images/shun/l4.jpg" alt="_alter">
-        </div>
-        <!-- 文字 -->
-        <div class="desc">
-          <!-- 文字相關的標籤: h1~h6, p, span -->
-          <span>範例文字4</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br />
-  <!-- 姿蓉的 -->
-  <section class="landing-page-kitty">
-    <!-- 卡片 -->
-    <div class="cards">
-      <!-- 第一張 -->
-      <div class="card">
-        <!-- 圖片 -->
-        <div class="image">
-          <!-- src: 圖片路徑; alt: 替代文字 -->
-          <img src="./images/shun/l1.jpg" alt="薰文">
-        </div>
-        <!-- 文字 -->
-        <div class="desc">
-          <!-- 文字相關的標籤: h1~h6, p, span -->
-          <span>範例文字1</span>
-          <!--
+    </section>
+    <br />
+    <!-- 姿蓉的區塊 -->
+    <section class="landing-page-kitty">
+      <!-- 卡片 -->
+      <div class="cards">
+        <!-- 第一張 -->
+        <div class="card">
+          <!-- 圖片 -->
+          <div class="image">
+            <!-- src: 圖片路徑; alt: 替代文字 -->
+            <img src="./images/shun/l1.jpg" alt="薰文" />
+          </div>
+          <!-- 文字 -->
+          <div class="desc">
+            <!-- 文字相關的標籤: h1~h6, p, span -->
+            <span>範例文字1</span>
+            <!--
             <span>範例文字11</span>
             <span>範例文字111</span>
             <span>範例文字1111</span>
@@ -145,88 +195,128 @@
             <h4>H4</h1>
             <h5>H5</h1>
             <h6>H6</h1>
-          -->
+          --></div>
+        </div>
+        <!-- 第二張 -->
+        <div class="card">
+          <!-- 圖片 -->
+          <div class="image">
+            <img src="./images/shun/l2.jpg" alt="_alter" />
+          </div>
+          <!-- 文字 -->
+          <div class="desc">
+            <!-- 文字相關的標籤: h1~h6, p, span -->
+            <span>範例文字2</span>
+          </div>
+        </div>
+        <!-- 第三張 -->
+        <div class="card">
+          <!-- 圖片 -->
+          <div class="image">
+            <img src="./images/shun/l3.jpg" alt="_alter" />
+          </div>
+          <!-- 文字 -->
+          <div class="desc">
+            <!-- 文字相關的標籤: h1~h6, p, span -->
+            <span>範例文字3</span>
+          </div>
+        </div>
+        <!-- 第四張 -->
+        <div class="card">
+          <!-- 圖片 -->
+          <div class="image">
+            <img src="./images/shun/l4.jpg" alt="_alter" />
+          </div>
+          <!-- 文字 -->
+          <div class="desc">
+            <!-- 文字相關的標籤: h1~h6, p, span -->
+            <span>範例文字4</span>
+          </div>
+        </div>
+        <!-- 第五張 -->
+        <div class="card">
+          <!-- 圖片 -->
+          <div class="image">
+            <img src="./images/shun/l3.jpg" alt="_alter" />
+          </div>
+          <!-- 文字 -->
+          <div class="desc">
+            <!-- 文字相關的標籤: h1~h6, p, span -->
+            <span>範例文字5</span>
+          </div>
+        </div>
+        <!-- 第六張 -->
+        <div class="card">
+          <!-- 圖片 -->
+          <div class="image">
+            <img src="./images/shun/l4.jpg" alt="_alter" />
+          </div>
+          <!-- 文字 -->
+          <div class="desc">
+            <!-- 文字相關的標籤: h1~h6, p, span -->
+            <span>範例文字6</span>
+          </div>
+        </div>
+        <!-- 第七張 -->
+        <div class="card">
+          <!-- 圖片 -->
+          <div class="image">
+            <img src="./images/shun/l4.jpg" alt="_alter" />
+          </div>
+          <!-- 文字 -->
+          <div class="desc">
+            <!-- 文字相關的標籤: h1~h6, p, span -->
+            <span>範例文字7</span>
+          </div>
         </div>
       </div>
-      <!-- 第二張 -->
-      <div class="card">
-        <!-- 圖片 -->
-        <div class="image">
-          <img src="./images/shun/l2.jpg" alt="_alter">
-        </div>
-        <!-- 文字 -->
-        <div class="desc">
-          <!-- 文字相關的標籤: h1~h6, p, span -->
-          <span>範例文字2</span>
-        </div>
-      </div>
-      <!-- 第三張 -->
-      <div class="card">
-        <!-- 圖片 -->
-        <div class="image">
-          <img src="./images/shun/l3.jpg" alt="_alter">
-        </div>
-        <!-- 文字 -->
-        <div class="desc">
-          <!-- 文字相關的標籤: h1~h6, p, span -->
-          <span>範例文字3</span>
-        </div>
-      </div>
-      <!-- 第四張 -->
-      <div class="card">
-        <!-- 圖片 -->
-        <div class="image">
-          <img src="./images/shun/l4.jpg" alt="_alter">
-        </div>
-        <!-- 文字 -->
-        <div class="desc">
-          <!-- 文字相關的標籤: h1~h6, p, span -->
-          <span>範例文字4</span>
-        </div>
-      </div>
-      <!-- 第五張 -->
-      <div class="card">
-        <!-- 圖片 -->
-        <div class="image">
-          <img src="./images/shun/l3.jpg" alt="_alter">
-        </div>
-        <!-- 文字 -->
-        <div class="desc">
-          <!-- 文字相關的標籤: h1~h6, p, span -->
-          <span>範例文字5</span>
-        </div>
-      </div>
-      <!-- 第六張 -->
-      <div class="card">
-        <!-- 圖片 -->
-        <div class="image">
-          <img src="./images/shun/l4.jpg" alt="_alter">
-        </div>
-        <!-- 文字 -->
-        <div class="desc">
-          <!-- 文字相關的標籤: h1~h6, p, span -->
-          <span>範例文字6</span>
-        </div>
-      </div>
-      <!-- 第七張 -->
-      <div class="card">
-        <!-- 圖片 -->
-        <div class="image">
-          <img src="./images/shun/l4.jpg" alt="_alter">
-        </div>
-        <!-- 文字 -->
-        <div class="desc">
-          <!-- 文字相關的標籤: h1~h6, p, span -->
-          <span>範例文字7</span>
-        </div>
-      </div>
-    </div>
-  </section>
-</body>
+    </section>
+  </body>
 </html>
 
 <!-- 樣式 -->
 <style>
+  /* 導覽列 */
+  .aileea-navbar {
+    display: flex;
+    /* 導覽列將分成左右兩邊的方法法1 */
+    justify-content: space-between;
+  }
+
+  .aileea-navbar .logo {
+    /* 導覽列將分成左右兩邊的方法法2: 不要管 */
+    /* flex: 1;
+    text-align: left; */
+
+    /* 導覽列將分成左右兩邊的方法法3: 不要管 */
+    /* margin-right: auto; */
+    border: 1px solid black;
+  }
+
+  .aileea-navbar .nav-items {
+    /* margin-left: auto; */
+    display: flex;
+    border: 1px solid black;
+  }
+
+  .aileea-navbar .nav-items div {
+    margin: 0 10px;
+    /* 上下、左右 */
+  }
+
+  /* 超連結 */
+  .aileea-navbar .nav-items a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* 超連結 hover */
+  .aileea-navbar .nav-items a:hover {
+    color: pink;
+  }
+
+  /* 卡片 */
+
   .cards {
     display: flex;
   }
@@ -278,27 +368,26 @@
 </style>
 
 <script type="module">
-  import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+  import Swiper from "https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js";
 
-  const swiper = new Swiper('.swiper-container', {
-  // Optional parameters
-  loop: true,
+  const swiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
 </script>

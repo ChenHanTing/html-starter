@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>輪播</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="image">
+            <!-- src: 圖片路徑; alt: 替代文字 -->
+            <img src="../images/shun/l1.jpg" alt="薰文" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image">
+            <!-- src: 圖片路徑; alt: 替代文字 -->
+            <img src="../images/shun/l1.jpg" alt="薰文" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="image">
+            <!-- src: 圖片路徑; alt: 替代文字 -->
+            <img src="../images/shun/l1.jpg" alt="薰文" />
+          </div>
+        </div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+  </body>
+</html>
+
+<style>
+  .swiper-container {
+    width: 600px;
+    height: 300px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin-top: calc(0px - 44px/2);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-button-prev:after
+  .swiper-button-next:after {
+    font-family: swiper-icons;
+    font-size: 44px;
+    font-size: 20px;
+    text-transform: none!important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-feature-settings: normal,;
+    font-variant: normal;
+    line-height: 1;
+
+    color: white;
+    font-size: .75rem;
+    font-weight: 700;
+  }
+
+  .swiper-button-prev {
+    position: absolute;
+    transform: translateY(-50%);
+    height: 30px;
+    top: 60%;
+    opacity: .8;
+    left: 0;
+    background-color: black;
+    transition: .2s;
+    right: auto;
+  }
+
+
+</style>
+
+<script type="module">
+  import Swiper from "https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js";
+
+  const swiper = new Swiper(".swiper-container", {
+    // 方向:
+    // direction: 'vertical',
+
+    // 無限輪播:
+    loop: true,
+
+    // 分頁: If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // 左右按鈕: Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // 滾輪: And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });
+</script>

@@ -1,104 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>各個元件</title>
-</head>
-<body>
-  <!-- 我的作品集/aboutMe -->
-  <section class="about-me">
-    <!-- 可以看看加div, span, p 會發生什麼事情? -->
-    <hr>
-    <!-- 需要調整: 字變白、字間距、字體 -->
-    <div class="titlee">我的作品集</div>
-    <div class="subtitlee">about me</div>
-    <!-- 超連結: # 代表沒有作用 -->
-    <div class="link">
-      <a href="#">Go</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>各個元件</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 我的作品集/aboutMe -->
+      <section class="about-me">
+        <!-- 可以看看加div, span, p 會發生什麼事情? -->
+        <hr />
+        <!-- 需要調整: 字變白、字間距、字體 -->
+        <div class="titlee">我的作品集</div>
+        <div class="subtitlee">about me</div>
+        <!-- 超連結: # 代表沒有作用 -->
+        <div class="link">
+          <a href="#">Go</a>
+        </div>
+      </section>
+      <br /><br /><br />
+      <!-- 類別 -->
+      <section class="genre-wrapper">
+        <!-- genre-wrapper: 上層容器 -->
+        <div class="genre sketch">
+          <!-- 需要調整: 字變白、字間距、字體 -->
+          <div class="titlee">素描</div>
+          <div class="subtitlee">人像 / 靜物 / 創作</div>
+          <!-- 超連結: # 代表沒有作用 -->
+          <div class="link">
+            <a href="#">Go</a>
+          </div>
+        </div>
+        <div class="genre watercolor">
+          <!-- 需要調整: 字變白、字間距、字體 -->
+          <div class="titlee">水彩</div>
+          <div class="subtitlee">
+            風景 / 靜物 / 花卉 / 寵物
+            <!--
+            <div>風景</div>
+            <div>靜物</div>
+            <div>花卉</div>
+            <div>寵物</div>
+          --></div>
+          <!-- 超連結: # 代表沒有作用 -->
+          <div class="link">
+            <a href="/about.html">Go</a>
+          </div>
+        </div>
+        <div class="genre ai-ps-xd">
+          <!-- 需要調整: 字變白、字間距、字體 -->
+          <div class="titlee">電繪</div>
+          <div class="subtitlee">動物 / 插畫 / 繪本設計 / 商業</div>
+          <!-- 超連結: # 代表沒有作用 -->
+          <div class="link">
+            <a href="#">Go</a>
+          </div>
+        </div>
+        <div class="genre oil-paint">
+          <!-- 需要調整: 字變白、字間距、字體 -->
+          <div class="titlee">油畫</div>
+          <div class="subtitlee">人像 / 風景 / 創作</div>
+          <!-- 超連結: # 代表沒有作用 -->
+          <div class="link">
+            <a href="#">Go</a>
+          </div>
+        </div>
+        <div class="genre illutration">
+          <!-- 需要調整: 字變白、字間距、字體 -->
+          <div class="titlee">插畫</div>
+          <div class="subtitlee">動物 / 靜物 / 創作</div>
+          <!-- 超連結: # 代表沒有作用 -->
+          <div class="link">
+            <a href="#">Go</a>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
-  <br><br><br>
-  <!-- 類別 -->
-  <section class="genre-wrapper">  <!-- genre-wrapper: 上層容器 -->
-    <div class="genre sketch">
-      <!-- 需要調整: 字變白、字間距、字體 -->
-      <div class="titlee">素描</div>
-      <div class="subtitlee">人像 / 靜物 / 創作</div>
-      <!-- 超連結: # 代表沒有作用 -->
-      <div class="link">
-        <a href="#">Go</a>
-      </div>
-    </div>
-    <div class="genre watercolor">
-      <!-- 需要調整: 字變白、字間距、字體 -->
-      <div class="titlee">水彩</div>
-      <div class="subtitlee">風景 / 靜物 / 花卉 / 寵物
-        <!--
-          <div>風景</div>
-          <div>靜物</div>
-          <div>花卉</div>
-          <div>寵物</div>
-        -->
-      </div>
-      <!-- 超連結: # 代表沒有作用 -->
-      <div class="link">
-        <a href="#">Go</a>
-      </div>
-    </div>
-    <div class="genre ai-ps-xd">
-      <!-- 需要調整: 字變白、字間距、字體 -->
-      <div class="titlee">電繪</div>
-      <div class="subtitlee">動物 / 插畫 / 繪本設計 / 商業</div>
-      <!-- 超連結: # 代表沒有作用 -->
-      <div class="link">
-        <a href="#">Go</a>
-      </div>
-    </div>
-    <div class="genre oil-paint">
-      <!-- 需要調整: 字變白、字間距、字體 -->
-      <div class="titlee">油畫</div>
-      <div class="subtitlee">人像 / 風景 / 創作</div>
-      <!-- 超連結: # 代表沒有作用 -->
-      <div class="link">
-        <a href="#">Go</a>
-      </div>
-    </div>
-    <div class="genre illutration">
-      <!-- 需要調整: 字變白、字間距、字體 -->
-      <div class="titlee">插畫</div>
-      <div class="subtitlee">動物 / 靜物 / 創作</div>
-      <!-- 超連結: # 代表沒有作用 -->
-      <div class="link">
-        <a href="#">Go</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- 蘿蔔們 -->
-  <div class="carot-wrapper">
-    <!-- 蘿蔔 -->
-    <div class="carot">
-      <!-- 蘿蔔頭 -->
-      <div class="image carot-head"><!--圖框-->
-        <img src="./images/carots/carot-head.jpeg" alt="_alter"><!--圖片-->
+    <!-- 蘿蔔們 -->
+    <div class="carot-wrapper">
+      <!-- 蘿蔔 -->
+      <div class="carot">
+        <!-- 蘿蔔頭 -->
+        <div class="image carot-head">
+          <!--圖框-->
+          <img src="./images/carots/carot-head.png" alt="_alter" /><!--圖片-->
+        </div>
+        <!-- 蘿蔔身體 -->
+        <div class="image carot-body">
+          <div class="carot-inner-body"></div>
+        </div>
+        <!-- 文字 -->
+        <div class="desc">
+          <!-- 文字相關的標籤: h1~h6, p, span -->
+          <img src="./images/carots/carot.png" alt="蘿蔔" class="carot-img" />
+          <div class="name">name</div>
+          <div class="content">......</div>
+          <img
+            src="./images/carots/carot-search.png"
+            alt="search"
+            class="search-img"
+          />
+        </div>
       </div>
-      <!-- 蘿蔔身體 -->
-      <div class="image carot-body">
-        <img src="./images/carots/carot-body.jpeg" alt="_alter">
+      <!-- 蘿蔔 -->
+      <div class="carot">
+        <!-- 蘿蔔頭 -->
+        <div class="image carot-head">
+          <!--圖框-->
+          <img src="./images/carots/carot-head.png" alt="_alter" /><!--圖片-->
+        </div>
+        <!-- 蘿蔔身體 -->
+        <div class="image carot-body">
+          <div class="carot-inner-body"></div>
+        </div>
+        <!-- 文字 -->
+        <div class="desc">
+          <!-- 文字相關的標籤: h1~h6, p, span -->
+          <img src="./images/carots/carot.png" alt="蘿蔔" class="carot-img" />
+          <div class="name">name</div>
+          <div class="content">......</div>
+          <img
+            src="./images/carots/carot-search.png"
+            alt="search"
+            class="search-img"
+          />
+        </div>
       </div>
-      <!-- 文字 -->
-      <div class="desc">
-        <!-- 文字相關的標籤: h1~h6, p, span -->
-        <span>範例文字7</span>
+      <!-- 蘿蔔 -->
+      <div class="carot">
+        <!-- 蘿蔔頭 -->
+        <div class="image carot-head">
+          <!--圖框-->
+          <img src="./images/carots/carot-head.png" alt="_alter" /><!--圖片-->
+        </div>
+        <!-- 蘿蔔身體 -->
+        <div class="image carot-body">
+          <div class="carot-inner-body"></div>
+        </div>
+        <!-- 文字 -->
+        <div class="desc">
+          <!-- 文字相關的標籤: h1~h6, p, span -->
+          <img src="./images/carots/carot.png" alt="蘿蔔" class="carot-img" />
+          <div class="name">name</div>
+          <div class="content">......</div>
+          <img
+            src="./images/carots/carot-search.png"
+            alt="search"
+            class="search-img"
+          />
+        </div>
+      </div>
+      <!-- 蘿蔔 -->
+      <div class="carot">
+        <!-- 蘿蔔頭 -->
+        <div class="image carot-head">
+          <!--圖框-->
+          <img src="./images/carots/carot-head.png" alt="_alter" /><!--圖片-->
+        </div>
+        <!-- 蘿蔔身體 -->
+        <div class="image carot-body">
+          <div class="carot-inner-body"></div>
+        </div>
+        <!-- 文字 -->
+        <div class="desc">
+          <!-- 文字相關的標籤: h1~h6, p, span -->
+          <img src="./images/carots/carot.png" alt="蘿蔔" class="carot-img" />
+          <div class="name">name</div>
+          <div class="content">......</div>
+          <img
+            src="./images/carots/carot-search.png"
+            alt="search"
+            class="search-img"
+          />
+        </div>
+      </div>
+      <!-- 蘿蔔 -->
+      <div class="carot">
+        <!-- 蘿蔔頭 -->
+        <div class="image carot-head">
+          <!--圖框-->
+          <img src="./images/carots/carot-head.png" alt="_alter" /><!--圖片-->
+        </div>
+        <!-- 蘿蔔身體 -->
+        <div class="image carot-body">
+          <div class="carot-inner-body"></div>
+        </div>
+        <!-- 文字 -->
+        <div class="desc">
+          <!-- 文字相關的標籤: h1~h6, p, span -->
+          <img src="./images/carots/carot.png" alt="蘿蔔" class="carot-img" />
+          <div class="name">name</div>
+          <div class="content">......</div>
+          <img
+            src="./images/carots/carot-search.png"
+            alt="search"
+            class="search-img"
+          />
+        </div>
+      </div>
+      <!-- 蘿蔔 -->
+      <div class="carot">
+        <!-- 蘿蔔頭 -->
+        <div class="image carot-head">
+          <!--圖框-->
+          <img src="./images/carots/carot-head.png" alt="_alter" /><!--圖片-->
+        </div>
+        <!-- 蘿蔔身體 -->
+        <div class="image carot-body">
+          <div class="carot-inner-body"></div>
+        </div>
+        <!-- 文字 -->
+        <div class="desc">
+          <!-- 文字相關的標籤: h1~h6, p, span -->
+          <img src="./images/carots/carot.png" alt="蘿蔔" class="carot-img" />
+          <div class="name">name</div>
+          <div class="content">......</div>
+          <img
+            src="./images/carots/carot-search.png"
+            alt="search"
+            class="search-img"
+          />
+        </div>
       </div>
     </div>
-  </div>
-  <footer>
-    FOOTER
-  </footer>
-</body>
+    <footer>FOOTER</footer>
+  </body>
 </html>
 
 <!-- 樣式 -->
@@ -106,14 +235,19 @@
   body {
     /* 背景顏色 */
     /* background-color: #061522; */
-    background-color: rgba(6,21,34,255);
+    background-color: rgba(6, 21, 34, 255);
     /* background-image: ...; */
   }
   /* 我的作品集 */
 
+  .container {
+    /* 背景圖片 */
+    background-image: url("./images/carots/bg.jpg");
+  }
+
   /*============== 關於我 ==============*/
   .about-me {
-    border: blueviolet 2px solid;
+    /* border: blueviolet 2px solid; */
   }
 
   /* about-me => title */
@@ -129,7 +263,8 @@
    *
    * 讓字變白
    */
-  .about-me .titlee, .subtitlee {
+  .about-me .titlee,
+  .subtitlee {
     /* 字的顏色 */
     color: white;
   }
@@ -172,7 +307,7 @@
     height: 80vh;
     padding: 0 20px;
 
-    border: burlywood 2px solid;
+    /* border: burlywood 2px solid; */
   }
 
   .genre-wrapper .genre {
@@ -216,7 +351,8 @@
   }
 
   /*============== 類別(單位) ==============*/
-  .genre .titlee, .subtitlee {
+  .genre .titlee,
+  .subtitlee {
     /* 字的顏色 */
     color: white;
   }
@@ -258,10 +394,12 @@
   } */
 
   /* 偽元素 */
-  /* .genre .subtitlee div::after {
-    content: '/';
-    margin: 0 2px;
-  } */
+  /*=========
+    .genre .subtitlee div::after {
+      content: '/';
+      margin: 0 2px;
+    }
+  =========*/
 
   /*============== 蘿蔔們 ==============*/
 
@@ -269,12 +407,70 @@
   .carot-wrapper {
     display: flex;
     flex-wrap: wrap;
-    border: brown 2px solid;
+    /* border: brown 2px solid; */
+    background-color: #1e375f;
   }
 
   .carot-wrapper .carot {
-    border: chartreuse 2px solid;
+    /* border: chartreuse 2px solid; */
     width: 33%;
+    /* 上下結界 */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* 響應式網頁: RWD */
+  @media screen and (max-width: 575px) {
+    .carot-wrapper .carot {
+      height: 200px;
+    }
+  }
+
+  /* 響應式網頁: RWD */
+  @media screen and (min-width: 576px) {
+    .carot-wrapper .carot {
+      height: 300px;
+    }
+  }
+
+  /* 響應式網頁: RWD */
+  @media screen and (min-width: 767px) {
+    .carot-wrapper .carot {
+      height: 400px;
+    }
+  }
+
+  /* 響應式網頁: RWD */
+  @media screen and (min-width: 991px) {
+    .carot-wrapper .carot {
+      height: 500px;
+    }
+  }
+
+  /* 響應式網頁: RWD */
+  @media screen and (min-width: 1080px) {
+    .carot-wrapper .carot {
+      height: 700px;
+    }
+  }
+
+  /* 響應式網頁: RWD */
+  @media screen and (min-width: 1280px) {
+    .carot-wrapper .carot {
+      height: 800px;
+    }
+  }
+
+  .carot-wrapper .carot .carot-head {
+    height: 20%;
+  }
+
+  .carot-wrapper .carot .carot-body {
+    height: 65%;
+  }
+
+  .carot-wrapper .carot .desc {
+    height: 15%;
   }
 
   .carot-wrapper .carot .desc {
@@ -287,22 +483,56 @@
     justify-content: center;
     /* 33% 裡面的百分之百 (這邊可以置換看看) */
     width: 100%;
-    background-color: #fff;
+    /* background-color: #fff; */
   }
 
   /* 可以不用看懂: 第一張照片外圖框 */
   .carot-wrapper .carot .image:nth-child(1) {
-    background-color: #fff;
+    /* background-color: #fff; */
   }
 
   /* 可以不用看懂: 第二張照片外圖框 */
   .carot-wrapper .carot .image:nth-child(2) {
-    background-color: yellow;
+    /* background-color: yellow; */
   }
 
   .carot-wrapper .carot .image img {
-    width: 90%;
+    width: 94%;
+    object-fit: cover;
+  }
+
+  .carot-wrapper .carot .carot-body .carot-inner-body {
+    width: 94%;
+  }
+
+  .carot-wrapper .carot .carot-body .carot-inner-body {
+    background-color: #ffdcbc;
+  }
+
+  .carot-wrapper .carot .desc {
+    width: 94%;
+    /* 往右移3% */
+    margin-left: 3%;
+    background-color: white;
+  }
+
+  .carot-wrapper .carot .desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carot-wrapper .carot .desc img {
+    width: 40px;
     object-fit: contain;
+  }
+
+  .carot-wrapper .carot .desc .name,
+  .carot-wrapper .carot .desc .content {
+    color: #543e1c;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 0 10px;
   }
 </style>
 
