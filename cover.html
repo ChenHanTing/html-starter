@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h4>Star Meow Moon Rabbit</h4>
+      </div>
+      <div class="social-media">
+        <!-- Icon -->
+        <a href="https://www.facebook.com">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.facebook.com">
+          <i class="fab fa-line"></i>
+        </a>
+        <!-- 超連結 -->
+        <!--
+          <div class="google">
+            <a href="https://www.google.com">
+              Google
+            </a>
+          </div>
+         -->
+      </div>
+    </nav>
+    <div class="container">
+      <!-- 我的作品集/aboutMe -->
+      <section class="about-me">
+        <!-- 可以看看加div, span, p 會發生什麼事情? -->
+        <hr />
+        <!-- 需要調整: 字變白、字間距、字體 -->
+        <div class="titlee">我的作品集</div>
+        <div class="subtitlee">about me</div>
+        <!-- 超連結: # 代表沒有作用 -->
+        <div class="link">
+          <a href="#">Go</a>
+        </div>
+      </section>
+      <br /><br /><br />
+      <!-- 類別 -->
+      <section class="genre-wrapper">
+        <!-- genre-wrapper: 上層容器 -->
+        <div class="genre sketch">
+          <!-- 需要調整: 字變白、字間距、字體 -->
+          <div class="titlee">素描</div>
+          <div class="subtitlee">人像 / 靜物 / 創作</div>
+          <!-- 超連結: # 代表沒有作用 -->
+          <div class="link">
+            <a href="#">Go</a>
+          </div>
+        </div>
+        <div class="genre watercolor">
+          <!-- 需要調整: 字變白、字間距、字體 -->
+          <div class="titlee">水彩</div>
+          <div class="subtitlee">
+            風景 / 靜物 / 花卉 / 寵物
+            <!--
+          <div>風景</div>
+          <div>靜物</div>
+          <div>花卉</div>
+          <div>寵物</div>
+        -->
+          </div>
+          <!-- 超連結: # 代表沒有作用 -->
+          <div class="link">
+            <a href="/about.html">Go</a>
+          </div>
+        </div>
+        <div class="genre ai-ps-xd">
+          <!-- 需要調整: 字變白、字間距、字體 -->
+          <div class="titlee">電繪</div>
+          <div class="subtitlee">動物 / 插畫 / 繪本設計 / 商業</div>
+          <!-- 超連結: # 代表沒有作用 -->
+          <div class="link">
+            <a href="#">Go</a>
+          </div>
+        </div>
+        <div class="genre oil-paint">
+          <!-- 需要調整: 字變白、字間距、字體 -->
+          <div class="titlee">油畫</div>
+          <div class="subtitlee">人像 / 風景 / 創作</div>
+          <!-- 超連結: # 代表沒有作用 -->
+          <div class="link">
+            <a href="#">Go</a>
+          </div>
+        </div>
+        <div class="genre illutration">
+          <!-- 需要調整: 字變白、字間距、字體 -->
+          <div class="titlee">插畫</div>
+          <div class="subtitlee">動物 / 靜物 / 創作</div>
+          <!-- 超連結: # 代表沒有作用 -->
+          <div class="link">
+            <a href="#">Go</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    /* 背景顏色 */
+    /* background-color: #061522; */
+    background-color: rgba(6, 21, 34, 255);
+    /* background-image: ...; */
+
+    /* reference: https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_background2 */
+    background-image: url("./images/carots/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 2000px;
+
+    /* reference: https://jsfiddle.net/omarjuvera/2raxtxqr/15/ */
+    /* background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 2000px; */
+  }
+
+  /*================== 導覽列 ==================*/
+  nav {
+    width: 100%;
+    display: flex;
+    /* 法2 */
+    justify-content: space-between;
+    outline: 1px solid black;
+  }
+
+  nav .logo,
+  .social-media {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav .logo {
+    /* 法1 */
+    /* margin-right: auto; */
+    outline: 1px solid red;
+  }
+
+  nav .social-media {
+    display: flex;
+    padding-top: 14px;
+    outline: 1px solid blue;
+  }
+
+  nav .social-media a {
+    margin: 0 4px;
+  }
+
+  nav .social-media a i {
+    font-size: 27px;
+  }
+
+  .container {
+    /* 背景圖片不適合放在這裡 */
+  }
+
+  /*============== 關於我 ==============*/
+  .about-me {
+    /* border: blueviolet 2px solid; */
+  }
+
+  /* about-me => title */
+  .about-me .titlee {
+    /* 字的間距 */
+    letter-spacing: 6px;
+  }
+
+  /**
+   * about-me => title
+   * about-me => subtitle
+   * about-me => a(超連結)
+   *
+   * 讓字變白
+   */
+  .about-me .titlee,
+  .subtitlee {
+    /* 字的顏色 */
+    color: white;
+  }
+
+  .about-me .link {
+    /* 背景顏色 */
+    background-color: white;
+    /* 如果沒有加寬，就會滿版 */
+    width: 60px;
+    /* 字移中間 */
+    text-align: center;
+  }
+
+  .about-me .link a {
+    /* 去除超連結底線 */
+    text-decoration: none;
+    /* 字體顏色 */
+    color: black;
+    /* 字粗度 */
+    font-weight: 900;
+  }
+
+  .about-me .subtitlee {
+    /* 結界: 上、左右、下 */
+    margin: 4px 0 9px;
+  }
+
+  .about-me hr {
+    width: 50px;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+
+  /*============== 類別(整體) ==============*/
+  .genre-wrapper {
+    /* 參考點 */
+    position: relative;
+    /* 高度 */
+    height: 80vh;
+    padding: 0 20px;
+
+    /* border: burlywood 2px solid; */
+  }
+
+  .genre-wrapper .genre {
+    position: absolute;
+  }
+
+  /**
+   * top: 頂
+   * right: 從右邊開始算
+   * left: 從左邊開始算
+   * bottom: 底
+   */
+
+  /* 素描 */
+  .sketch {
+    top: 10%;
+    left: 7%;
+  }
+  /* 水彩 */
+  .watercolor {
+    top: 0;
+    right: 5%;
+  }
+
+  /* 電繪 */
+  .ai-ps-xd {
+    top: 50%;
+    left: 50%;
+  }
+
+  /* 油畫 */
+  .oil-paint {
+    bottom: 0;
+    right: 5%;
+  }
+
+  /* 插畫 */
+  .illutration {
+    bottom: 0;
+    left: 5%;
+  }
+
+  /*============== 類別(單位) ==============*/
+  .genre .titlee,
+  .subtitlee {
+    /* 字的顏色 */
+    color: white;
+  }
+
+  .genre .titlee {
+    /* 字的大小 */
+    font-size: 20px;
+    /* 字的粗度 */
+    font-weight: 900;
+  }
+
+  .genre .link {
+    /* 背景顏色 */
+    background-color: white;
+    /* 如果沒有加寬，就會滿版 */
+    width: 60px;
+    /* 字移中間 */
+    text-align: center;
+  }
+
+  .genre .link a {
+    /* 去除超連結底線 */
+    text-decoration: none;
+    /* 字體顏色 */
+    color: black;
+    /* 字粗度 */
+    font-weight: 900;
+  }
+
+  .genre .subtitlee {
+    /* 結界: 上、左右、下 */
+    margin: 10px 0 13px;
+    display: flex;
+  }
+
+  /* 先不要了解 + 在幹嘛 */
+  /* .genre .subtitlee div + div {
+    margin-left: 10px;
+  } */
+
+  /* 偽元素 */
+  /*=============================================
+    .genre .subtitlee div::after {
+      content: '/';
+      margin: 0 2px;
+    }
+  =============================================*/
+</style>

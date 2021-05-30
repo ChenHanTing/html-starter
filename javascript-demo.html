@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="prev()">前一張</button>
+    <span id="demo"></span>
+    <button onclick="next()">後一張</button>
+  </body>
+</html>
+
+<script>
+  /* 第一次使用要宣告 */
+  let counter = 1;
+
+  // console.log("我是陳姿蓉");
+  // alert("我是陳姿蓉");
+
+  /* 一登入瀏覽器畫面會印出 */
+  console.log("計數器:", counter);
+  document.getElementById("demo").innerHTML = `<span>${counter}</span>`;
+
+  function prev() {
+    // console.log("我不是陳姿蓉");
+
+    // if (counter === 1) {
+    //   counter = 10;
+    // } else {
+    //   counter--;
+    // }
+
+    counter === 1 ? counter = 10 : counter--
+    console.log("計數器:", counter);
+    document.getElementById("demo").innerHTML = counter;
+  }
+
+  function next() {
+    // console.log("我不是陳姿蓉");
+
+    // if (counter === 10) {
+    //   counter = 1;
+    // } else {
+    //   counter++;
+    // }
+
+    counter === 10 ? counter = 1 : counter++
+    console.log("計數器:", counter);
+    document.getElementById("demo").innerHTML = counter;
+  }
+</script>

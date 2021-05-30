@@ -1,12 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Untitled Document</title>
   </head>
+
   <body>
-    <h1>關於我</h1>
+    <div class="title">
+      <h1>about me</h1>
+    </div>
+    <!-- https://codepen.io/echocarriet/pen/dybrVwg -->
+    <div class="cover">
+      <img src="./images/shun/l1.jpg" />
+    </div>
+    <div class="card">
+      <div class="big">
+        <img src="./images/shun/l1.jpg" />
+      </div>
+      <div class="small">
+        <h2>繪畫方式</h2>
+        <div>
+          <span>使用：ＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷ</span>
+          <p>
+            ＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷ
+          </p>
+        </div>
+        <div class="skills">
+          <div><span>插畫</span></div>
+          <div><span>水彩</span></div>
+          <div><span>素描</span></div>
+          <div><span>粉彩</span></div>
+          <div><span>油畫</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="big">
+        <img src="./images/shun/l1.jpg" />
+      </div>
+      <div class="small">
+        <h2>繪畫方式</h2>
+        <div>
+          <span>使用：ＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷ</span>
+          <p>
+            ＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷ
+          </p>
+        </div>
+        <div class="skills">
+          <div><span>插畫</span></div>
+          <div><span>水彩</span></div>
+          <div><span>素描</span></div>
+          <div><span>粉彩</span></div>
+          <div><span>油畫</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="big">
+        <img src="./images/shun/l1.jpg" />
+      </div>
+      <div class="small">
+        <h2>繪畫方式</h2>
+        <div>
+          <span>使用：ＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷ</span>
+          <p>
+            ＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷＷ
+          </p>
+        </div>
+        <div class="skills">
+          <div><span>插畫</span></div>
+          <div><span>水彩</span></div>
+          <div><span>素描</span></div>
+          <div><span>粉彩</span></div>
+          <div><span>油畫</span></div>
+        </div>
+      </div>
+    </div>
+
+
+    <style>
+      body {
+        /* border: brown 2px solid; */
+        background-color: #1e375f;
+      }
+
+      h1,h2,h3,h4,h5,h6,p,span {
+        color: white;
+        /* 把這些元素的margin, padding 都歸0 */
+        margin: 0;
+        padding: 0;
+      }
+
+      .card {
+        /* width: 90%; */
+        display: flex;
+      }
+
+      .card .big {
+        width: 35%;
+        margin-right: 20px;
+        /* border: 1px solid black; */
+      }
+
+      .card .big img {
+        width: 100%;
+      }
+
+      .card .small h2 {
+        /* 再調 */
+        margin: 6px 0;
+      }
+
+      .card .skills {
+        display: flex;
+        /* justify-content: center; */
+      }
+
+      .card .skills div {
+        background-color: white;
+        margin-right: 10px;
+        padding: 4px 8px;
+      }
+
+      .card .skills div span {
+        color: black;
+      }
+    </style>
   </body>
 </html>
