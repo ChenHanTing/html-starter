@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Untitled Document</title>
+  </head>
+
+  <body>
+    <div class="title">
+      <hr />
+      <h1>about me</h1>
+      <hr class="two" />
+    </div>
+
+    <!-- https://codepen.io/echocarriet/pen/dybrVwg -->
+    <!--圖框-->
+    <div class="cover">
+      <!-- 圖片: 這裡的寬不要寫死，例如1400px -->
+      <img src="./images/shun/03.jpg" width="100%" />
+    </div>
+
+    <div class="card">
+      <div class="big">
+        <!-- <img src="資料夾名稱/images/shun/(36).jpg" /> -->
+        <img src="./images/shun/(36).jpg" />
+      </div>
+      <div class="small">
+        <h3 class="head">ttchen</h3>
+        <h2>陳姿蓉</h2>
+        <h3>自介</h3>
+        <p>
+          從小就喜愛繪畫,去細細品嚐感受創作者當下的心情,喜歡與人們討論想法時，
+          運用不同構想所激發出的新的創作,堅持著自己對夢想的執著，
+          期許未來能突破現在的自己.
+        </p>
+        <div class="map">
+          <h4>地址</h4>
+          <span>新北市永和區竹林路90號</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="big">
+        <img src="./images/shun/05.jpg" />
+      </div>
+
+      <!-- 阿拉伯數字不能當className -->
+      <div class="small two">
+        <h2 class="head">繪畫種類</h2>
+        <div>
+          <h3>使用</h3>
+          <p>
+            以素描、水彩、電繪、粉彩、油畫、壓克力、插畫為主要繪畫的媒材來使用
+          </p>
+          <!--
+            <span>xxx</span>
+            <span>yyy</span>
+            <p>zzz</p>
+            <p>aaa</p>
+            <p>bbb</p>
+          -->
+          <div class="design">
+            <h3>平面設計</h3>
+          </div>
+          <p>
+            包含名片設計、商品圖設計、背景設計、橫幅設計、包裝設計、場景設計、人物設計、
+            海報設計、ＤＭ設計、網頁設計、ppt排版設計、品牌logo、字體設計等等
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="big">
+        <img src="./images/shun/06.jpg" />
+      </div>
+      <div class="small">
+        <h2 class="head">繪畫方式</h2>
+        <h3>使用軟體</h3>
+        <p>AI、 PS、 DW 、AE、 ID</p>
+        <p>
+          在插畫、電繪上我會使用ＡＩ、ＰＳ來繪製，ＡＩ繪製風格多為色塊方式呈現，大約三至四天，ＰＳ繪製風格多為比刷堆疊，製做出較細緻的質感，大約一到兩個月，
+          在平面設計進行排版時，會使用id來製作ppt、書籍為運用，在影片剪輯特效上，會使用ＡＥ做特效效果。
+        </p>
+        <div class="skills">
+          <div><span>插畫</span></div>
+          <div><span>水彩</span></div>
+          <div><span>素描</span></div>
+          <div><span>粉彩</span></div>
+          <div><span>油畫</span></div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      body {
+        /* border: brown 2px solid; */
+        background-color: #1e375f;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      span {
+        color: white;
+        /* 把這些元素的margin, padding 都歸0 */
+        margin: 8px;
+        padding: 0;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .title hr {
+        width: 120px;
+      }
+      .title hr2 {
+        width: 120px;
+      }
+
+      .cover {
+        /* 文字置中 */
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        /* 識別用 */
+        /* border: 2px solid black; */
+        /* 拉開與上面標題的間距 */
+        margin-top: 3%;
+        /* 左右置中 */
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .small {
+        /* margin-top: 10px; */
+        width: 30%;
+      }
+
+      .small .two {
+        margin-top: 50px;
+        width: 30%;
+      }
+
+      /* 讓文字開頭的上結界=0，圖片跟文字對齊 */
+      .small .head {
+        margin-top: 0;
+      }
+
+      .card {
+        /* width: 90%; */
+        display: flex;
+        margin: 10px;
+        margin-top: 5%;
+      }
+
+      .card .big {
+        width: 35%;
+        margin-right: 30px;
+
+        /* border: 1px solid black; */
+      }
+
+      .card .big img {
+        width: 100%;
+        margin-left: 50%;
+      }
+
+      .card .small {
+        margin-left: 250px;
+      }
+
+
+      .card .skills {
+        display: flex;
+        /* justify-content: center; */
+      }
+
+      .card .skills div {
+        background-color: white;
+        margin-left: 10px;
+        padding: 0 15px;
+      }
+
+      .card .skills div span {
+        color: black;
+      }
+    </style>
+  </body>
+</html>

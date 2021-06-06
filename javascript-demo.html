@@ -7,15 +7,33 @@
     <title>Document</title>
   </head>
   <body>
-    <button onclick="prev()">前一張</button>
-    <span id="demo"></span>
-    <button onclick="next()">後一張</button>
+    <div class="swiper">
+      <button onclick="prev()">前一張</button>
+      <div class="img-wrapper">
+        <img id='controlled-image' src="./images/example/1.jpg" alt="">
+        <span id="demo"></span>
+      </div>
+      <button onclick="next()">後一張</button>
+    </div>
+    <div class="buttons">
+      <button onclick="showNum(1)">1</button>
+      <button onclick="showNum(2)">2</button>
+      <button onclick="showNum(3)">3</button>
+      <button onclick="showNum(4)">4</button>
+      <button onclick="showNum(5)">5</button>
+      <button onclick="showNum(6)">6</button>
+      <button onclick="showNum(7)">7</button>
+      <button onclick="showNum(8)">8</button>
+      <button onclick="showNum(9)">9</button>
+      <button onclick="showNum(10)">10</button>
+    </div>
   </body>
 </html>
 
 <script>
   /* 第一次使用要宣告 */
   let counter = 1;
+  const controlledImage = document.getElementById('controlled-image')
 
   // console.log("我是陳姿蓉");
   // alert("我是陳姿蓉");
@@ -24,6 +42,32 @@
   console.log("計數器:", counter);
   document.getElementById("demo").innerHTML = `<span>${counter}</span>`;
 
+  /**
+   * 指定
+   *
+   * 1. 改變前的數字印出來
+   * 2. 改變
+   * 3. 改變後的數字印出來
+   * 4. 把改變後的數字印到id=demo的html
+   * 5. 把圖片的連結改成新的連結
+   */
+   function showNum(number) {
+    /* 我們把 number 指定給 counter */
+    console.log("計數器(改變前):", counter);
+    counter = number;
+    console.log("計數器(改變後):", counter);
+    /* id為 demo */
+    document.getElementById("demo").innerHTML = counter;
+    controlledImage.src = `./images/example/${counter}.jpg`
+  }
+
+  /**
+   * 前一張
+   *
+   * 3. 改變後的數字印出來
+   * 4. 把改變後的數字印到id=demo的html
+   * 5. 把圖片的連結改成新的連結
+   */
   function prev() {
     // console.log("我不是陳姿蓉");
 
@@ -36,8 +80,17 @@
     counter === 1 ? counter = 10 : counter--
     console.log("計數器:", counter);
     document.getElementById("demo").innerHTML = counter;
+    controlledImage.src = `./images/example/${counter}.jpg`
   }
 
+  /**
+   * 後一張
+   *
+   * 2. 改變
+   * 3. 改變後的數字印出來
+   * 4. 把改變後的數字印到id=demo的html
+   * 5. 把圖片的連結改成新的連結
+   */
   function next() {
     // console.log("我不是陳姿蓉");
 
@@ -50,5 +103,22 @@
     counter === 10 ? counter = 1 : counter++
     console.log("計數器:", counter);
     document.getElementById("demo").innerHTML = counter;
+    controlledImage.src = `./images/example/${counter}.jpg`
   }
 </script>
+
+<style>
+  .swiper {
+    display: flex;
+  }
+
+  .img-wrapper {
+    width: 40vw;
+    height: auto;
+  }
+
+  .img-wrapper img {
+    width: 100%;
+    object-fit: contain;
+  }
+</style>
