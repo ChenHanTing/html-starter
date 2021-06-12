@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="swiper">
+        <!-- 圖框 -->
+        <div class="prev-wrapper" onclick="prev()">
+          <!-- 圖片 -->
+          <img id="prev" src="./images/carots/prev.png" alt="" />
+        </div>
+        <div class="img-wrapper">
+          <img id="controlled-image" src="./images/example/1.jpg" alt="" />
+        </div>
+        <div class="next-wrapper" onclick="next()">
+          <img id="next" src="./images/carots/next.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  /* 第一次使用要宣告 */
+  let counter = 1;
+  const controlledImage = document.getElementById("controlled-image");
+
+  /* 一登入瀏覽器畫面會印出 */
+  console.log("計數器:", counter);
+
+  function prev() {
+    counter === 1 ? (counter = 10) : counter--;
+    console.log("計數器:", counter);
+    controlledImage.src = `./images/example/${counter}.jpg`;
+  }
+
+  function next() {
+
+    counter === 10 ? (counter = 1) : counter++;
+    console.log("計數器:", counter);
+    controlledImage.src = `./images/example/${counter}.jpg`;
+  }
+</script>
+
+<style>
+  .swiper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-wrapper {
+    border-style: solid;
+    border-color: #56411d;
+    border-width: 15px;
+
+    width: 60vw;
+    height: auto;
+  }
+
+  .next-wrapper,
+  .prev-wrapper {
+    width: 100px;
+    height: auto;
+    display: flex;
+    margin: auto 0;
+  }
+
+  .next-wrapper:hover,
+  .prev-wrapper:hover {
+    cursor: pointer;
+  }
+
+  .img-wrapper img,
+  .next-wrapper img,
+  .prev-wrapper img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .under {
+    margin: 30%;
+    display: flex;
+    background-color: #ea966e;
+  }
+  .u1.u2.u3.u4 {
+    background-color: #ea966e;
+    width: 33%;
+    display: flex;
+  }
+</style>
