@@ -1,0 +1,167 @@
+/* font-awesome 當成文字處理 */
+.pagination-icon {
+  color: #e9986e;
+  font-size: 44px;
+}
+
+.pagination-icon:hover {
+  cursor: pointer;
+  /* cursor: not-allowed; */
+}
+
+body {
+  background: #273d5a;
+}
+
+.card .image img {
+  object-fit: cover;
+}
+
+.card {
+  width: 25%;
+  cursor: pointer;
+}
+
+.card .image {
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-wrapper {
+  width: 90vh;
+  height: 80vh;
+  border: burlywood 1px solid;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.next-wrapper,
+.prev-wrapper {
+  width: 100px;
+  height: auto;
+  display: flex;
+  margin: auto 0;
+}
+
+.next-wrapper:hover,
+.prev-wrapper:hover {
+  cursor: pointer;
+}
+
+.img-wrapper img,
+.next-wrapper img,
+.prev-wrapper img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.big-carot-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.carot-container {
+  position: relative;
+}
+
+.big-carot-wrapper img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.desc {
+  /* inset 跟top, right, left, bottom 有關係 */
+  position: absolute;
+  inset: 0;
+  width: 600px;
+  color: white;
+  font-size: 20px;
+}
+
+.desc {
+  margin-left: 250px;
+}
+.container {
+  width: 50%;
+  justify-content: center;
+}
+
+.span {
+  margin-top: -365px;
+  margin-left: 90px;
+}
+.mean {
+  margin-top: -280px;
+  margin-left: 90px;
+}
+
+.landing-page {
+  margin-top: 40px;
+}
+
+.cards {
+  width: 90%;
+  height: 120px;
+  /* 置中 */
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  background-color: #f09c6c;
+}
+
+.cards img {
+  object-fit: cover;
+}
+
+/* 響應式網頁: RWD */
+@media screen and (max-width: 575px) {
+  .desc {
+    width: 350px;
+    transform: translateY(-100px);
+  }
+}
+
+/* 響應式網頁: RWD */
+@media screen and (max-width: 767px) {
+  .desc .content {
+    /* 第三行以後省略，省略符號... */
+    /*
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+        */
+  }
+}
+
+/* 響應式網頁: RWD */
+@media screen and (min-width: 576px) {
+  .desc {
+    width: 400px;
+  }
+}
+
+/* 響應式網頁: RWD */
+@media screen and (min-width: 767px) {
+  .desc {
+    width: 450px;
+  }
+}
+
+/* 響應式網頁: RWD */
+@media screen and (min-width: 991px) {
+  .desc {
+    width: 500px;
+  }
+}
