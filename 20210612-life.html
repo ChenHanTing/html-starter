@@ -21,17 +21,9 @@
     </div>
 
     <div class="sort">
-      <div class="one">
-        <span>人像</span>
-      </div>
-
-      <div class="two">
-        <span>靜物</span>
-      </div>
-
-      <div class="three">
-        <span>創作</span>
-      </div>
+      <div id="p1" class="one clicked">人像</div>
+      <div id="p2" class="two">靜物</div>
+      <div id="p3" class="three">創作</div>
     </div>
 
     <!-- 蘿蔔們 -->
@@ -45,7 +37,8 @@
         </div>
         <!-- 蘿蔔身體 -->
         <div class="image carot-body">
-          <div class="carot-inner-body"></div>
+          <img src="./carot-final/images/webwork/sketch/article/1.jpg" alt="" />
+          <!-- <div class="carot-inner-body"></div> -->
         </div>
         <!-- 文字 -->
         <div class="desc">
@@ -213,6 +206,7 @@
     justify-content: center;
     margin: 60px auto;
     padding: 0 0 10;
+    color: white;
   }
 
   .sort .one,
@@ -243,6 +237,11 @@
   .sort .one:hover,
   .sort .two:hover,
   .sort .three:hover {
+    background: #e9986e;
+  }
+
+  /* 被點擊之後的顏色 */
+  .clicked {
     background: #e9986e;
   }
 
@@ -391,4 +390,28 @@
 <!-- Javascript -->
 <script>
   /* 先放著 */
+  const p1 = document.getElementById("p1");
+  const p2 = document.getElementById("p2");
+  const p3 = document.getElementById("p3");
+
+  p1.addEventListener("click", (e) => handleClick(e));
+  p2.addEventListener("click", (e) => handleClick(e));
+  p3.addEventListener("click", (e) => handleClick(e));
+
+  /* 點擊之後要做什麼事情 */
+  function handleClick(e) {
+    // 換顏色 ⬇️
+
+    /* 去掉 class */
+    const pSeries = [p1, p2, p3];
+    pSeries.forEach((e) => e.classList.remove("clicked"));
+    /* 加 class */
+    e.target.classList.add("clicked");
+
+    // 換圖 ⬇️
+
+    // 換文字 ⬇️
+  }
+
+  // p1.addEventListener('事件，例如: click/mouse/scroll/resize', function() {...})
 </script>

@@ -9,8 +9,8 @@ const rightButton = document.getElementById("asdf-next");
 const title = document.getElementById("title");
 const content = document.getElementById("content");
 /* 改變標題、內文 */
-title.innerHTML = customTitle;
-content.innerHTML = customContent;
+title.innerHTML = articles[0].title;
+content.innerHTML = articles[0].content;
 /* 判斷要不要有左右按鈕 */
 const hasButton = images.length > 4;
 /* 控制按鈕要不要出現 */
@@ -66,6 +66,9 @@ function showNum(number) {
   const formattedNumber = 4 * (currentSet - 1) + number;
   /* 我們把 number 指定給 counter */
   controlledImage.src = imagesWithPath[formattedNumber];
+  /* 標題、文章 */
+  title.innerHTML = articles[formattedNumber].title;
+  content.innerHTML = articles[formattedNumber].content;
 }
 /* 第一次使用要宣告 */
 let counter = 0;
@@ -75,9 +78,13 @@ console.log("計數器:", counter);
 function prev() {
   counter === 0 ? (counter = images.length - 1) : counter--;
   controlledImage.src = imagesWithPath[counter];
+  title.innerHTML = articles[counter].title;
+  content.innerHTML = articles[counter].content;
 }
 /* 大輪播牆後一張 */
 function next() {
   counter === images.length - 1 ? (counter = 0) : counter++;
   controlledImage.src = imagesWithPath[counter];
+  title.innerHTML = articles[counter].title;
+  content.innerHTML = articles[counter].content;
 }

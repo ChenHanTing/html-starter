@@ -131,7 +131,7 @@
     /* 圖片路徑 */
     const imagePath = "./images/webwork/sketch/static";
     /* 圖片內的所有照片 */
-    const images = ["1", "2", "3", "default"];
+    const images = [...[...Array.from({length: 7}, (_, i) => i + 1), ...Array(3).fill('default')]];
     /* 標題跟內文 */
     customTitle = '...';
     customContent = '......';
