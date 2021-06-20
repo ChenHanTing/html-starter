@@ -13,24 +13,14 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+
+    <!-- 我們自己寫的 Javascript -->
+    <script defer src="./js/swipe.js"></script>
   </head>
 
   <body>
     <!-- 導覽列 -->
-    <nav
-      class="
-        d-flex
-        align-items-center
-        navv
-        hhg
-        ghg
-        fghg
-        gfhgjjhgjghjhg
-        ghhjgjhgh
-        ghgjghfjdw
-        fdshgerhwehtrehwtr
-      "
-    >
+    <nav class="d-flex align-items-center">
       <!-- 圖片 -->
       <div class="one">
         <img src="./image/icon-01.png" width="200" height="57" class="img-1" />
@@ -38,54 +28,62 @@
 
       <div class="d-none d-lg-flex nav-items">
         <!-- 圖片 2-->
-        <div class="cover">
+        <a href="#me" class="cover">
           <img
             src="./image/icon-02.png"
             width="150"
             height="100"
             class="img-2"
           />
-        </div>
+        </a>
 
         <!-- 圖片 3-->
-        <div class="cover">
+        <a href="#mydream" class="cover">
           <img
             src="./image/icon-03.png"
             width="150"
             height="100"
             class="img-3"
           />
-        </div>
+        </a>
 
         <!-- 圖片 4-->
-        <div class="cover">
+        <a href="#mywork" class="cover">
           <img
             src="./image/icon-04.png"
             width="150"
             height="100"
             class="img-3"
           />
-        </div>
+        </a>
 
         <!-- 圖片 5-->
-        <div class="cover">
+        <a
+          href="https://www.instagram.com/cat22395o/?hl=zh-tw"
+          class="cover"
+          target="_blank"
+        >
           <img
             src="./image/icon-05.png"
             width="80"
             height="100"
             class="img-3"
           />
-        </div>
+        </a>
 
         <!-- 圖片 6-->
-        <div class="cover">
+        <a
+          href="https://www.facebook.com/profile.php?id=100006871787674"
+          class="cover"
+          target="_blank"
+        >
           <img
             src="./image/icon-06.png"
             width="80"
             height="100"
             class="img-3"
           />
-        </div>
+        </a>
       </div>
     </nav>
 
@@ -100,7 +98,7 @@
         <div class="col-1 sidebarr">
           <div class="sticky-items">
             <div class="side-btn">
-              <a href="#"
+              <a href="#me"
                 ><img
                   src="./image/icon-02.png"
                   width="112pt"
@@ -109,7 +107,7 @@
               /></a>
             </div>
             <div class="side-btn">
-              <a href="#"
+              <a href="#mydream"
                 ><img
                   src="./image/icon-03.png"
                   width="112pt"
@@ -118,7 +116,7 @@
               /></a>
             </div>
             <div class="side-btn">
-              <a href="#"
+              <a href="#mywork"
                 ><img
                   src="./image/icon-04.png"
                   width="112pt"
@@ -130,20 +128,21 @@
         </div>
         <div class="col-11 elena-container">
           <!-- 全部寫在裡面 -->
-          <!-- 圖片 7-->
-          <div class="ya">
+
+          <!-- logo -->
+          <div class="ya d-flex">
             <img
               src="./image/icon-07.png"
               width="475"
               height="100"
-              class="img-7"
+              class="img-7 m-auto"
             />
           </div>
 
-          <!-- Ｎews包了我的圖片和引言-->
-          <div class="News">
+          <!-- 照片 + 對話框 -->
+          <div class="News row" id="me">
             <!-- 圖片 me-->
-            <div class="1">
+            <div class="one col-12 col-lg-6">
               <img
                 src="./image/icon-14.png"
                 width="475"
@@ -153,243 +152,313 @@
             </div>
 
             <!-- 包著小引言-->
-            <div class="border">
-              <h6>
-                <p>個性古靈精怪，、細心謹慎，真誠貼心，我很喜歡Enjoy</p>
-                <p>好好生活好好分類整理，好好靜下心放慢腳步反而能收穫</p>
-                <p>更多，用心行合一當中，逐漸安定的心，方能智慧決策。</p>
-                <p>個人喜歡發揮創意與想像力。</p>
-                <p>我的座右銘：「生活是包羅萬象，而自己如同宇宙的中心</p>
-                <p>運轉著追隨著上帝直至回家，是生而為靈性的唯一目的。」</p>
-                <p>「生活即設計，設計即生活。」</p>
-              </h6>
+            <div class="border col-12 col-lg-6">
+              <ul>
+                <li>個性古靈精怪、細心謹慎、真誠貼心</li>
+                <li>
+                  我很喜歡Enjoy，好好生活好好分類整理，好好靜下心放慢腳步反而能收穫更多，用心行合一當中，逐漸安定的心，方能智慧決策。
+                </li>
+                <li>個人喜歡發揮創意與想像力。</li>
+                <li>
+                  我的座右銘：「生活是包羅萬象，而自己如同宇宙的中心，運轉著追隨著上帝直至回家，是生而為靈性的唯一目的」
+                </li>
+                <li>「生活即設計，設計即生活」</li>
+              </ul>
             </div>
           </div>
 
           <!-- Ｎews包了聯絡和技能的h2標題字體-->
-          <div class="News-iteam2">
-            <div class="001">
+          <div class="row mt-5">
+            <div class="col-12 col-lg-6">
               <h2>聯絡資訊:</h2>
+              <!-- 聯絡資訊 -->
+              <!-- News-iteam3是手機icon和號碼-->
+              <div class="News-iteam3">
+                <!-- 圖片 6-->
+                <div class="01">
+                  <img
+                    src="./image/icon-08.png"
+                    width="70"
+                    height="70"
+                    class="img-6"
+                  />
+                </div>
+
+                <h4>0973201558</h4>
+              </div>
+
+              <!-- News-iteam4是網站和連結-->
+              <div class="News-iteam4">
+                <!-- 圖片 8-->
+                <div class="02">
+                  <img
+                    src="./image/icon-09.png"
+                    width="70"
+                    height="70"
+                    class="img-8"
+                  />
+                </div>
+                <h4>https://www.pinterest.com/</h4>
+              </div>
+
+              <!-- News-iteam5是mail和帳號-->
+              <div class="News-iteam5">
+                <!-- 圖片 10-->
+                <div class="03">
+                  <img
+                    src="./image/icon-10.png"
+                    width="70"
+                    height="70"
+                    class="img-10"
+                  />
+                </div>
+
+                <h4>508120576@gapp.fju.edu.tw</h4>
+              </div>
+
+              <!-- News-iteam6是ig和帳號-->
+              <div class="News-iteam6">
+                <!-- 圖片 11-->
+                <div class="04">
+                  <img
+                    src="./image/icon-11.png"
+                    width="70"
+                    height="70"
+                    class="img-10"
+                  />
+                </div>
+                <h4>cat22395o</h4>
+              </div>
+
+              <!-- News-iteam7是fb和連結-->
+              <div class="News-iteam7">
+                <!-- 圖片 fb-->
+                <div class="05">
+                  <img
+                    src="./image/icon-12.png"
+                    width="70"
+                    height="70"
+                    class="img-10"
+                  />
+                </div>
+                <h4>https://www.facebook.com/pro</h4>
+              </div>
             </div>
 
-            <div class="News-iteam22">
-              <div class="002">
-                <h2>技能：</h2>
+            <div class="col-12 col-lg-6">
+              <h2>技能:</h2>
+              <!-- 圓餅圖 -->
+              <div class="News-iteam8">
+                <!-- News-iteam8包了三個ADOBE-->
+
+                <!-- 圖片 12-->
+                <div class="adobe">
+                  <img
+                    src="./image/icon-15.png"
+                    width="150"
+                    height="150"
+                    class="img-12"
+                  />
+                </div>
+
+                <!-- 圖片 13-->
+                <div class="adobe">
+                  <img
+                    src="./image/icon-16.png"
+                    width="150"
+                    height="150"
+                    class="img-13"
+                  />
+                </div>
+
+                <!-- 圖片 14-->
+                <div class="adobe">
+                  <img
+                    src="./image/icon-17.png"
+                    width="150"
+                    height="150"
+                    class="img-14"
+                  />
+                </div>
+              </div>
+              <h2>工作經歷:</h2>
+              <table>
+                <tbody>
+                  <tr>
+                    <td>5/2016-11/2016</td>
+                    <td>
+                      <div class="heart">
+                        <img
+                          src="./image/icon-13.png"
+                          width="30"
+                          height="30"
+                          class="img-15"
+                        />
+                      </div>
+                    </td>
+                    <td>Aimely salon - 專業美睫店/平面美編</td>
+                  </tr>
+                  <tr>
+                    <td>1/2019-6/2019</td>
+                    <td>
+                      <div class="heart">
+                        <img
+                          src="./image/icon-13.png"
+                          width="30"
+                          height="30"
+                          class="img-15"
+                        />
+                      </div>
+                    </td>
+                    <td>得意化學工廠股份有限公司/產品發想平面設計</td>
+                  </tr>
+                  <tr>
+                    <td>7/2019-1/2020</td>
+                    <td>
+                      <div class="heart">
+                        <img
+                          src="./image/icon-13.png"
+                          width="30"
+                          height="30"
+                          class="img-15"
+                        />
+                      </div>
+                    </td>
+                    <td>璿涵國際有限公司/網頁美編設計</td>
+                  </tr>
+                  <tr>
+                    <td>3/2020-7/2020</td>
+                    <td>
+                      <div class="heart">
+                        <img
+                          src="./image/icon-13.png"
+                          width="30"
+                          height="30"
+                          class="img-15"
+                        />
+                      </div>
+                    </td>
+                    <td>植心精油品牌工作室</td>
+                  </tr>
+                  <tr>
+                    <td>8/2020-7/2021</td>
+                    <td>
+                      <div class="heart">
+                        <img
+                          src="./image/icon-13.png"
+                          width="30"
+                          height="30"
+                          class="img-15"
+                        />
+                      </div>
+                    </td>
+                    <td>台灣皇朝國際股份有限公司/設計行銷專員</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 我的夢想文字標題圖片 -->
+          <div class="mydream-wrapper">
+            <div class="mydream" id="mydream">
+              <img
+                src="./Carousel/image-20.png"
+                width="70%"
+                height="115"
+                class="mydream"
+                style="object-fit: contain"
+              />
+            </div>
+
+            <div class="swiper row align-items-center">
+              <!-- 圖框 -->
+              <div class="prev-wrapper col-1" onclick="prev()">
+                <!-- 圖片 -->
+                <img id="prev" src="./Carousel/image-22.png" width="100%" />
+              </div>
+
+              <div class="img-wrapper col-10">
+                <img
+                  id="controlled-image"
+                  src="./Carousel/image-21.png"
+                  width="100%"
+                />
+              </div>
+
+              <div class="next-wrapper col-1" onclick="next()">
+                <img id="next" src="./Carousel/image-22.png" width="100%" />
+              </div>
+
+              <!-- 女孩圖片素材一 -->
+              <div class="mydream-left">
+                <img
+                  src="./Carousel/image-23.png"
+                  width="100%"
+                  class="material-1"
+                />
+              </div>
+
+              <!-- 游泳的女孩們素材二 -->
+              <div class="mydream-right">
+                <img
+                  src="./Carousel/image-24.png"
+                  width="100%"
+                  class="material-2"
+                />
               </div>
             </div>
           </div>
 
-          <!-- News-iteam3是手機icon和號碼-->
-          <div class="News-iteam3">
-            <!-- 圖片 6-->
-            <div class="01">
+          <div class="mywork-wrapper">
+            <!-- 我的工作文字標題圖片 -->
+            <div class="mywork" id="mywork">
               <img
-                src="./image/icon-08.png"
-                width="70"
-                height="70"
-                class="img-6"
+                src="./Carousel/image-20.png"
+                width="70%"
+                height="115"
+                class="mydream"
+                style="object-fit: contain"
               />
             </div>
 
-            <h4>0973201558</h4>
-          </div>
+            <div class="swiper row align-items-center">
+              <!-- 圖框 -->
+              <div class="prev-wrapper col-1" onclick="prev()">
+                <!-- 圖片 -->
+                <img id="prev" src="./Carousel/image-22.png" width="100%" />
+              </div>
 
-          <!-- News-iteam4是網站和連結-->
-          <div class="News-iteam4">
-            <!-- 圖片 8-->
-            <div class="02">
-              <img
-                src="./image/icon-09.png"
-                width="70"
-                height="70"
-                class="img-8"
-              />
+              <div class="img-wrapper col-10">
+                <img
+                  id="controlled-image"
+                  src="./Carousel/image-21.png"
+                  width="100%"
+                />
+              </div>
+
+              <div class="next-wrapper col-1" onclick="next()">
+                <img id="next" src="./Carousel/image-22.png" width="100%" />
+              </div>
+
+              <!-- 女孩圖片素材一 -->
+              <div class="mydream-left">
+                <img
+                  src="./Carousel/image-23.png"
+                  width="100%"
+                  class="material-1"
+                />
+              </div>
+
+              <!-- 游泳的女孩們素材二 -->
+              <div class="mydream-right">
+                <img
+                  src="./Carousel/image-24.png"
+                  width="100%"
+                  class="material-2"
+                />
+              </div>
             </div>
-            <h4>https://www.pinterest.com/</h4>
-          </div>
-
-          <!-- News-iteam5是mail和帳號-->
-          <div class="News-iteam5">
-            <!-- 圖片 10-->
-            <div class="03">
-              <img
-                src="./image/icon-10.png"
-                width="70"
-                height="70"
-                class="img-10"
-              />
-            </div>
-
-            <h4>508120576@gapp.fju.edu.tw</h4>
-          </div>
-
-          <!-- News-iteam6是ig和帳號-->
-          <div class="News-iteam6">
-            <!-- 圖片 11-->
-            <div class="04">
-              <img
-                src="./image/icon-11.png"
-                width="70"
-                height="70"
-                class="img-10"
-              />
-            </div>
-            <h4>cat22395o</h4>
-          </div>
-
-          <!-- News-iteam7是fb和連結-->
-          <div class="News-iteam7">
-            <!-- 圖片 fb-->
-            <div class="05">
-              <img
-                src="./image/icon-12.png"
-                width="70"
-                height="70"
-                class="img-10"
-              />
-            </div>
-            <h4>https://www.facebook.com/pro</h4>
-          </div>
-
-          <div class="News-iteam8">
-            <!-- News-iteam8包了三個ADOBE-->
-
-            <!-- 圖片 12-->
-            <div class="adobe">
-              <img
-                src="./image/icon-15.png"
-                width="150"
-                height="150"
-                class="img-12"
-              />
-            </div>
-
-            <!-- 圖片 13-->
-            <div class="adobe">
-              <img
-                src="./image/icon-16.png"
-                width="150"
-                height="150"
-                class="img-13"
-              />
-            </div>
-
-            <!-- 圖片 14-->
-            <div class="adobe">
-              <img
-                src="./image/icon-17.png"
-                width="150"
-                height="150"
-                class="img-14"
-              />
-            </div>
-          </div>
-
-          <h2>工作經歷:</h2>
-          <!--News-iteam10-->
-          <div class="News-iteam10">
-            <h5>5/2016-11/2016</h5>
-            <!-- 圖片 15-->
-            <div class="heart">
-              <img
-                src="./image/icon-13.png"
-                width="30"
-                height="30"
-                class="img-15"
-              />
-            </div>
-            <h5>Aimely salon - 專業美睫店/平面美編</h5>
-          </div>
-
-          <!--News-iteam11-->
-          <div class="News-iteam11">
-            <h5>1/2019-6/2019</h5>
-            <!-- 圖片 15-->
-            <div class="heart">
-              <img
-                src="./image/icon-13.png"
-                width="30"
-                height="30"
-                class="img-15"
-              />
-            </div>
-            <h5>得意化學工廠股份有限公司/產品發想平面設計</h5>
-          </div>
-
-          <!--News-iteam12-->
-          <div class="News-iteam12">
-            <h5>7/2019-1/2020</h5>
-            <!-- 圖片 15-->
-            <div class="heart">
-              <img
-                src="./image/icon-13.png"
-                width="30"
-                height="30"
-                class="img-15"
-              />
-            </div>
-            <h5>璿涵國際有限公司/網頁美編設計</h5>
-          </div>
-
-          <!--News-iteam13-->
-          <div class="News-iteam13">
-            <h5>3/2020-7/2020</h5>
-          </div>
-          <!-- 圖片 15-->
-          <div class="heart">
-            <img
-              src="./image/icon-13.png"
-              width="30"
-              height="30"
-              class="img-15"
-            />
-          </div>
-          <h5>植心精油品牌工作室</h5>
-
-          <!--News-iteam14-->
-          <div class="News-iteam14">
-            <h5>8/2020-7/2021</h5>
-          </div>
-
-          <!-- 圖片 15-->
-          <div class="heart">
-            <img
-              src="./image/icon-13.png"
-              width="30"
-              height="30"
-              class="img-15"
-            />
-          </div>
-          <h5>台灣皇朝國際股份有限公司/設計行銷專員</h5>
-
-          <!-- 我的夢想文字標題圖片 -->
-          <div class="mydream">
-            <img
-              src="./Carousel/image-20.png"
-              width="1020"
-              height="115"
-              class="mydream"
-            />
-          </div>
-
-          <!-- 女孩圖片素材一 -->
-          <div class="mydream">
-            <img
-              src="./Carousel/image-23.png"
-              width="400"
-              height="400"
-              class="material-1"
-            />
-          </div>
-
-          <!-- 游泳的女孩們素材二 -->
-          <div class="mydream">
-            <img
-              src="./Carousel/image-24.png"
-              width="652"
-              height="600"
-              class="material-2"
-            />
           </div>
         </div>
       </div>
@@ -450,7 +519,13 @@
     background-position: center;
     background-size: cover;
     width: 91%;
-    height: 2000px;
+    height: 3000px;
+  }
+
+  @media screen and (max-width: 991px) {
+    .elena-container {
+      height: 3500px;
+    }
   }
 
   .cover {
@@ -529,52 +604,33 @@
 
   .border {
     background-color: white;
+    padding: 30px;
+    color: blue;
+    border-radius: 10px;
+  }
+
+  .border ul li {
+    margin: 10px 0;
   }
 
   .sidebarr {
     background-color: white;
   }
 
-  .News-iteam2 {
-    display: flex;
-    margin: 0px 50px 0px 250px;
-  }
-
-  .News-iteam22 {
-    display: flex;
-    margin: 0px 50px 38px 500px;
-  }
-
-  .News-iteam3 {
-    display: flex;
-    margin: 0px 0px 0px 125px;
-  }
-
-  .News-iteam4 {
-    display: flex;
-    margin: 0px 0px 0px 125px;
-  }
-
-  .News-iteam5 {
-    display: flex;
-    margin: 0px 0px 0px 125px;
-  }
-
-  .News-iteam6 {
-    display: flex;
-    margin: 0px 0px 0px 125px;
-  }
-
+  .News-iteam3,
+  .News-iteam4,
+  .News-iteam5,
+  .News-iteam6,
   .News-iteam7 {
     display: flex;
-    margin: 0px 0px 0px 125px;
+    align-items: center;
+    /* margin: 0px 0px 0px 125px; */
   }
 
   .News-iteam8 {
     display: flex;
     justify-content: center;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 800px;
+    margin: 0;
   }
 
   .News-iteam10 {
@@ -624,4 +680,116 @@
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 678px;
   }
+
+  .heart {
+    position: relative;
+  }
+  /* 偽元素 */
+  .heart::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: -15%;
+    border: 1px solid white;
+    height: 35%;
+  }
+
+  .swiper {
+    height: 60vh;
+    display: flex;
+    position: relative;
+  }
+
+  .img-wrapper {
+    /* 要改改這裡 */
+    width: 50vw;
+    height: 80vh;
+    border: 4px solid white;
+    height: auto;
+  }
+
+  .next-wrapper,
+  .prev-wrapper {
+    width: 100px;
+    height: auto;
+    display: flex;
+    margin: auto 0;
+  }
+
+  .next-wrapper:hover,
+  .prev-wrapper:hover {
+    cursor: pointer;
+  }
+
+  .img-wrapper img,
+  .next-wrapper img,
+  .prev-wrapper img {
+    display: flex;
+    margin: auto;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .mydream-left,
+  .mydream-right {
+    position: absolute;
+    top: 120%;
+    width: 20%;
+  }
+
+  .mydream-left {
+    left: 0;
+  }
+
+  .mydream-right {
+    right: 30%;
+  }
+
+  .mydream-wrapper {
+    margin-top: 400px;
+    margin-bottom: 400px;
+  }
 </style>
+
+<script>
+  /* 第一次使用要宣告 */
+  let counter = 1;
+  const controlledImage = document.getElementById("controlled-image");
+
+  // console.log("我是陳姿蓉");
+  // alert("我是陳姿蓉");
+
+  /* 一登入瀏覽器畫面會印出 */
+  console.log("計數器:", counter);
+  document.getElementById("demo").innerHTML = `<span>${counter}</span>`;
+
+  function prev() {
+    // console.log("我不是陳姿蓉");
+
+    // if (counter === 1) {
+    //   counter = 10;
+    // } else {
+    //   counter--;
+    // }
+
+    counter === 1 ? (counter = 10) : counter--;
+    console.log("計數器:", counter);
+    controlledImage.src = `./image/example/${counter}.jpg`;
+    document.getElementById("demo").innerHTML = counter;
+  }
+
+  function next() {
+    // console.log("我不是張薰文");
+
+    // if (counter === 10) {
+    //   counter = 1;
+    // } else {
+    //   counter++;
+    // }
+
+    counter === 10 ? (counter = 1) : counter++;
+    console.log("計數器:", counter);
+    controlledImage.src = `./image/example/${counter}.jpg`;
+    document.getElementById("demo").innerHTML = counter;
+  }
+</script>

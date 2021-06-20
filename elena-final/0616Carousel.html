@@ -5,28 +5,28 @@
      <meta charset="UTF-8" />
      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
+
      <title>Document</title>
- 
+
    </head>
    <body>
      <div class="swiper">
        <!-- 圖框 -->
        <div class="prev-wrapper" onclick="prev()">
-        
+
          <!-- 圖片 -->
          <img id='prev' src="./Carousel/image-22.png" alt="看不見圖片的悲哀">
        </div>
- 
+
        <div class="img-wrapper">
          <img id='controlled-image' src="./Carousel/image-21.png" alt="看不見圖片的悲哀">
          <span id="demo"></span>
        </div>
- 
+
        <div class="next-wrapper" onclick="next()">
          <img id='next' src="./Carousel/image-22.png" alt="看不見圖片的悲哀">
        </div>
-       
+
        <!-- 輪播背後的女孩元素-->
        <div class="girlgirl">
        <img id='cat'  src="./Carousel/image-24.png" width="600" height="600"  alt="看不見圖片的悲哀">
@@ -36,66 +36,24 @@
        <div class="catgirl">
         <img id='yacat'  src="./Carousel/image-23.png" width="400" height="400"  alt="看不見圖片的悲哀">
          </div>
-
-
-
      </div>
    </body>
  </html>
- 
+
  <script>
-   /* 第一次使用要宣告 */
-   let counter = 1;
-   const controlledImage = document.getElementById('controlled-image')
- 
-   // console.log("我是陳姿蓉");
-   // alert("我是陳姿蓉");
- 
-   /* 一登入瀏覽器畫面會印出 */
-   console.log("計數器:", counter);
-   document.getElementById("demo").innerHTML = `<span>${counter}</span>`;
- 
-   function prev() {
-     // console.log("我不是陳姿蓉");
- 
-     // if (counter === 1) {
-     //   counter = 10;
-     // } else {
-     //   counter--;
-     // }
- 
-     counter === 1 ? counter = 10 : counter--
-     console.log("計數器:", counter);
-     controlledImage.src = `./images/example/${counter}.jpg`
-     document.getElementById("demo").innerHTML = counter;
-   }
- 
-   function next() {
-     // console.log("我不是張薰文");
- 
-     // if (counter === 10) {
-     //   counter = 1;
-     // } else {
-     //   counter++;
-     // }
- 
-     counter === 10 ? counter = 1 : counter++
-     console.log("計數器:", counter);
-     controlledImage.src = `./images/example/${counter}.jpg`
-     document.getElementById("demo").innerHTML = counter;
-   }
+   const imageLength = 10;
  </script>
- 
+
  <style>
    .swiper {
      display: flex;
    }
- 
+
    .img-wrapper {
      width: 35vw;
      height: auto;
    }
- 
+
    .next-wrapper,
    .prev-wrapper {
      width: 100px;
@@ -103,12 +61,12 @@
      display: flex;
      margin: auto 0;
    }
- 
+
    .next-wrapper:hover,
    .prev-wrapper:hover {
      cursor: pointer;
    }
- 
+
    .img-wrapper img,
    .next-wrapper img,
    .prev-wrapper img {
@@ -128,5 +86,5 @@
   left: 50px;
 }
  </style>
- 
- </html> 
+
+ </html>
