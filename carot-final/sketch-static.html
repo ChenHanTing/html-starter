@@ -131,9 +131,18 @@
     /* 圖片路徑 */
     const imagePath = "./images/webwork/sketch/static";
     /* 圖片內的所有照片 */
-    const images = [...[...Array.from({length: 7}, (_, i) => i + 1), ...Array(3).fill('default')]];
+    // const images = [...[...Array.from({length: 7}, (_, i) => i + 1), ...Array(3).fill('default')]];
+    const images = ["1", "2", "3", "4", "5", "6", "7", "default"];
     /* 標題跟內文 */
-    customTitle = '...';
-    customContent = '......';
+    const articles = [
+      { title: "xxxxxxx", content: "xxxxxxxxx" },
+      { title: "標題2", content: "<span><h1>3567</h1></span>" },
+      { title: "標題3", content: "內文3" },
+      { title: "標題4", content: "內文4" },
+      { title: "標題5", content: "內文5" },
+      { title: "標題6", content: "內文6" },
+      { title: "標題7", content: "內文7" },
+      { title: null, content: null },
+    ];
   </script>
 </html>
